@@ -26,8 +26,9 @@ const reviewSchema = new mongoose.Schema({
 });
 
 const productSchema = new mongoose.Schema({
-  productID: {
-    type: String,
+  amount: {
+    type: Number,
+    default: 1,
   },
   featured: {
     type: Boolean,

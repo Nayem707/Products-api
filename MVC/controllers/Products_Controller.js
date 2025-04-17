@@ -87,7 +87,7 @@ const getAllProduct = asyncHandler(async (req, res) => {
 const createProduct = asyncHandler(async (req, res) => {
   // Extract product data from the request body
   const {
-    productID,
+    amount,
     featured,
     title,
     description,
@@ -114,7 +114,7 @@ const createProduct = asyncHandler(async (req, res) => {
 
   // Create a new product document
   const product = await Product.create({
-    productID,
+    amount,
     featured,
     title,
     description,
